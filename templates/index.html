@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team PEC</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<header>
+    <div class="jumbotron">
+        <div class="row d-flex justify-content-around">
+            <div class="col-4 d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Beatest">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='images/futureskills.png') }}" alt="NASSCOM Futureskills">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='images/ibm.png') }}" alt="IBM">
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="row justify-content-center ">
+            <h1>Video Stream</h1>
+        </div>
+        <div class="row justify-content-center ">
+            <button id="start" class="col-2 btn btn-primary">Start</button>
+            <button id="stop" class="offset-1 col-2 btn btn-danger">Stop</button>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img id="stream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='scripts/recorder.js') }}"
+        type="application/javascript"></script>
+</body>
+</html>

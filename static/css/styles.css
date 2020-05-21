@@ -1,0 +1,28 @@
+body {
+  background: #1B0F32;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #eeeeee;
+}
+header {
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+.jumbotron {
+  background: #AC9DC5;
+}
+header img {
+    max-height: 100px;
+    /*width: 100%;*/
+}
+
+section {
+  padding: 200px 20px;
+}
+
+#stream {
+  padding-top: 20px;
+}
