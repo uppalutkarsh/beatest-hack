@@ -115,8 +115,44 @@ buttonStopB.onclick = function () {
 const applauseButton = document.getElementById('applauseA');
 let applause = new Audio("/static/applause.mp3");
 
-applauseButton.onclick = function() {
+applauseButton.onclick = function () {
     applause.play();
+};
+
+const disableApplauseButton = document.getElementById('disableApplause');
+
+disableApplauseButton.onclick = function () {
+    if (applauseButton.disabled) {
+        applauseButton.disabled = false;
+        disableApplauseButton.classList.remove('btn-success');
+        disableApplauseButton.classList.add('btn-danger');
+        disableApplauseButton.innerText = "Disable Feature";
+
+    } else {
+        applauseButton.disabled = true;
+        disableApplauseButton.classList.remove('btn-danger');
+        disableApplauseButton.classList.add('btn-success');
+        disableApplauseButton.innerText = "Enable Feature";
+    }
+};
+
+const boardButton = document.getElementById('boardB');
+const buttonDisableBoard = document.getElementById('disableBoard');
+
+buttonDisableBoard.onclick = function () {
+    if (boardButton.disabled) {
+        boardButton.disabled = false;
+        buttonDisableBoard.classList.remove('btn-success');
+        buttonDisableBoard.classList.add('btn-danger');
+        buttonDisableBoard.innerText = "Disable Feature";
+
+    } else {
+        boardButton.disabled = true;
+        buttonDisableBoard.classList.remove('btn-danger');
+        buttonDisableBoard.classList.add('btn-success');
+        buttonDisableBoard.innerText = "Enable Feature";
+    }
+
 };
 
 // window.setInterval(fetchMessage, 1000);
