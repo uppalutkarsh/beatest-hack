@@ -26,3 +26,17 @@ section {
 #stream {
   padding-top: 20px;
 }
+
+#exTab1 .nav-tabs > li > a {
+  color: #AC9DC5;
+  background: #1B0F32;
+  border-bottom: 1px solid white;
+  /*border: 1px white;*/
+  /*border-radius: 4px 4px 0 0;*/
+}
+
+#exTab1 .tab-content {
+  color : white;
+  padding : 5px 15px;
+}
+

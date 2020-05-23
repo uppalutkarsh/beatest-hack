@@ -26,16 +26,61 @@
 </header>
 <section>
     <div class="container">
-        <div class="row justify-content-center ">
-            <h1>Video Stream</h1>
-        </div>
-        <div class="row justify-content-center ">
-            <button id="start" class="col-2 btn btn-primary">Start</button>
-            <button id="stop" class="offset-1 col-2 btn btn-danger">Stop</button>
-        </div>
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <img id="stream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+        <div id="exTab1">
+            <ul class="nav nav-tabs">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#1a" data-toggle="tab">Stream</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#2a" data-toggle="tab">Applause</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#3a" data-toggle="tab">Board</a>
+                </li>
+            </ul>
+
+            <div class="tab-content clearfix">
+                <div class="tab-pane active" id="1a">
+                    <div class="row justify-content-center ">
+                        <h1>Video Stream</h1>
+                    </div>
+                    <div class="row justify-content-center ">
+                        <button id="start" class="col-2 btn btn-primary">Start</button>
+                        <button id="stop" class="offset-1 col-2 btn btn-danger">Stop</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <img id="stream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="2a">
+                    <div class="row justify-content-center ">
+                        <h1>Applause</h1>
+                    </div>
+                    <div class="row justify-content-center ">
+                        <button id="startA" class="col-2 btn btn-primary">Start</button>
+                        <button id="stopA" class="offset-1 col-2 btn btn-danger">Stop</button>
+                        <a href="javascript:void(0);" id="applauseA" role="button" class="offset-1 col-2 btn btn-success">Applause</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <img id="stream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="3a">
+                    <div class="row justify-content-center ">
+                        <h1>Board</h1>
+                    </div>
+                    <div class="row justify-content-center ">
+                        <button id="startB" class="col-2 btn btn-primary">Start</button>
+                        <button id="stopB" class="offset-1 col-2 btn btn-danger">Stop</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <img id="stream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

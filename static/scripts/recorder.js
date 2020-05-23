@@ -36,15 +36,98 @@ buttonStop.onclick = function () {
     xhr.send(JSON.stringify({status: "false"}));
 };
 
-window.setInterval(fetchMessage, 1000);
+const buttonRecordA = document.getElementById("startA");
+const buttonStopA = document.getElementById("stopA");
 
-function fetchMessage() {
+buttonRecordA.disabled = true;
+
+buttonRecordA.onclick = function () {
+    // var url = window.location.href + "record_status";
+    buttonRecordA.disabled = true;
+    buttonStopA.disabled = false;
+
+    // XMLHttpRequest
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             // alert(xhr.responseText);
         }
     };
-    xhr.open("GET", "/extra");
-    xhr.get();
-}
+    xhr.open("POST", "/record_status");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.send(JSON.stringify({status: "true"}));
+};
+
+buttonStopA.onclick = function () {
+    buttonRecordA.disabled = false;
+    buttonStopA.disabled = true;
+
+    // XMLHttpRequest
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // alert(xhr.responseText);
+        }
+    };
+    xhr.open("POST", "/record_status");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.send(JSON.stringify({status: "false"}));
+};
+
+const buttonRecordB = document.getElementById("startB");
+const buttonStopB = document.getElementById("stopB");
+
+buttonRecordB.disabled = true;
+
+buttonRecordB.onclick = function () {
+    // var url = window.location.href + "record_status";
+    buttonRecordB.disabled = true;
+    buttonStopB.disabled = false;
+
+    // XMLHttpRequest
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // alert(xhr.responseText);
+        }
+    };
+    xhr.open("POST", "/record_status");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.send(JSON.stringify({status: "true"}));
+};
+
+buttonStopB.onclick = function () {
+    buttonRecordB.disabled = false;
+    buttonStopB.disabled = true;
+
+    // XMLHttpRequest
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // alert(xhr.responseText);
+        }
+    };
+    xhr.open("POST", "/record_status");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.send(JSON.stringify({status: "false"}));
+};
+
+const applauseButton = document.getElementById('applauseA');
+let applause = new Audio("/static/applause.mp3");
+
+applauseButton.onclick = function() {
+    applause.play();
+};
+
+// window.setInterval(fetchMessage, 1000);
+//
+// function fetchMessage() {
+//     let xhr = new XMLHttpRequest();
+//     xhr.onreadystatechange = function () {
+//         if (xhr.readyState === 4 && xhr.status === 200) {
+//             // alert(xhr.responseText);
+//         }
+//     };
+//     xhr.open("GET", "/extra");
+//     xhr.get();
+// }
