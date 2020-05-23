@@ -14,7 +14,6 @@
 
 
 import cv2
-import time
 
 
 def find_hand(video_capture, palmCascade):
@@ -37,6 +36,9 @@ def find_hand(video_capture, palmCascade):
 def capture_hand(video_capture, palmCascade):
     hand, frame = find_hand(video_capture, palmCascade)
     hand_flag = False
+    font = cv2.FONT_HERSHEY_PLAIN
+    font_scale = 1.5
+    rectangle_bgr = (0, 0, 0)
 
     """ Draw a rectangle around the hand """
     if len(hand) > 0:
@@ -45,14 +47,21 @@ def capture_hand(video_capture, palmCascade):
         for (x, y, w, h) in hand:
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             frame = cv2.flip(frame, 1)
-            cv2.putText(frame, 'You can ask doubt now.', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+            text = 'You can ask doubt now.'
+            (text_width, text_height) = cv2.getTextSize(text, font, fontScale=font_scale, thickness=1)[0]
+            text_offset_x = x
+            text_offset_y = y - 10
+            box_coords = (
+                (text_offset_x, text_offset_y), (text_offset_x + text_width + 2, text_offset_y - text_height - 2))
+            cv2.rectangle(frame, box_coords[0], box_coords[1], rectangle_bgr, cv2.FILLED)
+            cv2.putText(frame, text, (text_offset_x, text_offset_y), font, fontScale=font_scale, color=(0, 255, 0),
+                        thickness=1)
     else:
         frame = cv2.flip(frame, 1)
     """ Display the resulting frame """
     # cv2.imshow('Video', frame)
 
     return hand_flag, frame
-
 
 # """ Load the cascade xml file """
 # palmCascade = cv2.CascadeClassifier('palm_cascade.xml')
