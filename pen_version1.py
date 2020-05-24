@@ -72,7 +72,7 @@ while(1):
             
         else:
             # Draw the line on the canvas
-            canvas = cv2.line(canvas, (x1,y1),(x2,y2), [255,0,0], 4)
+            canvas = cv2.line(canvas, (x1,y1),(x2,y2), [0,0,255], 4)
         
         # After the line is drawn the new points become the previous points.
         x1,y1= x2,y2
