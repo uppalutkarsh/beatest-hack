@@ -3,6 +3,7 @@ import numpy as np
 import time
 
 penval = [[0, 100, 179], [86, 173, 255]]
+# penval = [[62, 118, 153], [84, 193, 246]]
 
 load_from_disk = False
 if load_from_disk:
@@ -72,7 +73,7 @@ def board_gen(cap, canvas, frame):
 
         else:
             # Draw the line on the canvas
-            canvas = cv2.line(canvas, (x1, y1), (x2, y2), [255, 0, 0], 4)
+            canvas = cv2.line(canvas, (x1, y1), (x2, y2), [0, 0, 255], 4)
 
         # After the line is drawn the new points become the previous points.
         x1, y1 = x2, y2
