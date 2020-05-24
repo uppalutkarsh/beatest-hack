@@ -28,3 +28,7 @@
 #### Youtube Videos
 
 #### Doc File
+
+### ✨&nbsp; Contributors:
+
+<table><tr><td align="center"><a href="http://www.yanoucrea.fr"><img src="https://avatars0.githubusercontent.com/u/966550?v=4" width="100px;" alt="toofff"/><br /><sub><b>toofff</b></sub></a></td><td align="center"><a href="http://www.les-tilleuls.coop"><img src="https://avatars3.githubusercontent.com/u/1257968?v=4" width="100px;" alt="Grégory Copin"/><br /><sub><b>Grégory Copin</b></sub></a><br /></td><td align="center"><a href="https://github.com/priyanshu92"><img src="https://avatars1.githubusercontent.com/u/7589718?v=4" width="100px;" alt="PRIYANSHU AGRAWAL"/><br /><sub><b>PRIYANSHU AGRAWAL</b></sub></a><br /></td><td align="center"><a href="http://james.greenaway.io"><img src="https://avatars3.githubusercontent.com/u/425261?v=4" width="100px;" alt="James Greenaway"/><br /><sub><b>James Greenaway</b></sub></a><br /></td><td align="center"><a href="https://github.com/itrombitas"><img src="https://avatars1.githubusercontent.com/u/36223986?v=4" width="100px;" alt="itrombitas"/><br /><sub><b>itrombitas</b></sub></a></td>
