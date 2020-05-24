@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 penval = [[0, 100, 179], [86, 173, 255]]
-
+# penval = [[62, 118, 153], [84, 193, 246]]
 
 load_from_disk = True
 if load_from_disk:
