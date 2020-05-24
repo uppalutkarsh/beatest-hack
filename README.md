@@ -2,13 +2,7 @@
 
 # Beatest Hackathon
 
-> Hand Raise Detection using OpenCV
-<br>
-> Applause
-<br>
-> Virtual Screen Board
-<br>
-> Image refining 
+> Hand Raise Detection using OpenCV, Applause, Virtual Screen Board, Image refining 
 
 <br>
 <br>
