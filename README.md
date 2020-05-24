@@ -4,24 +4,6 @@
 
 > Hand Raise Detection using OpenCV
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
-
-<!-- MARKDOWN LINKS -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/uppalutkarsh/beatest-hack.svg?style=flat-square
-[contributors-url]: https://github.com/uppalutkarsh/beatest-hack/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/uppalutkarsh/beatest-hack.svg?style=flat-square
-[forks-url]: https://github.com/uppalutkarsh/beatest-hack/network/members
-[stars-shield]: https://img.shields.io/github/stars/uppalutkarsh/beatest-hack.svg?style=flat-square
-[stars-url]: https://github.com/uppalutkarsh/beatest-hack/stargazers
-[issues-shield]: https://img.shields.io/github/issues/uppalutkarsh/beatest-hack.svg?style=flat-square
-[issues-url]: https://github.com/uppalutkarsh/beatest-hack/issues
-
-
 
 ### 📘&nbsp; Assumptions:
 * Still Camera
