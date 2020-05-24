@@ -1,6 +1,9 @@
-# beatest-hack
+<img src="readme_images/pec-logo.png" align="right" />
 
-### Hand Raise Detection using OpenCV
+# Beatest Hackathon [![Hackathon]
+(https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)]
+
+> Hand Raise Detection using OpenCV
 
 #### Assumptions:
 * Still Camera
