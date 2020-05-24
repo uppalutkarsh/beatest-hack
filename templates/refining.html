@@ -16,8 +16,8 @@
         </button>
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Stream</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('stream') }}">Stream</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('applause') }}">Applause</a>
@@ -25,8 +25,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('board') }}">Board</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('refining') }}">Refining</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Refining</a>
                 </li>
             </ul>
         </div>
@@ -56,12 +56,13 @@
                         <h1>Video Stream</h1>
                     </div>
                     <div class="row justify-content-center ">
-                        <button id="start" class="col-2 btn btn-primary">Start</button>
-                        <button id="stop" class="offset-1 col-2 btn btn-danger">Stop</button>
+                        <button id="startR" class="col-2 btn btn-primary">Start</button>
+                        <button id="stopR" class="offset-1 col-2 btn btn-danger">Stop</button>
+                        <button id="disableR" class="offset-1 col-2 btn btn-danger">Disable Feature</button>
                     </div>
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
-                            <img id="stream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+                            <img id="stream" src="{{ url_for('refined_video_feed') }}" alt="Video Stream">
                         </div>
                     </div>
                 </div>
@@ -80,7 +81,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="{{ url_for('static', filename='scripts/recorder.js') }}"
+<script src="{{ url_for('static', filename='scripts/recorderRefining.js') }}"
         type="application/javascript"></script>
 </body>
 </html>
