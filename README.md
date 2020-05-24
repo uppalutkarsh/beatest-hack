@@ -3,8 +3,11 @@
 # Beatest Hackathon
 
 > Hand Raise Detection using OpenCV
+<br>
 > Applause
+<br>
 > Virtual Screen Board
+<br>
 > Image refining 
 
 <br>
