@@ -5,7 +5,7 @@
 > Hand Raise Detection using OpenCV, Applause, Virtual Screen Board, Image refining 
 
 <br>
-### Table of Contents
+## Table of Contents
 * [About the Project](#about-the-project)
 * [Assumptions](#assumptions)
 * [Requirements](#requirements)
