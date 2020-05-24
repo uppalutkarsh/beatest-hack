@@ -16,11 +16,11 @@
         </button>
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Stream</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('applause') }}">Applause</a>
+                    <a class="nav-link" href="{{ url_for('stream') }}">Stream</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Applause</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('board') }}">Board</a>
@@ -47,14 +47,18 @@
 <section>
     <div class="container">
         <div id="exTab1">
+
             <div class="tab-content clearfix">
-                <div class="tab-pane active" id="1a">
+                <div class="tab-pane active" id="2a">
                     <div class="row justify-content-center ">
-                        <h1>Video Stream</h1>
+                        <h1>Applause</h1>
+
                     </div>
-                    <div class="row justify-content-center ">
-                        <button id="start" class="col-2 btn btn-primary">Start</button>
-                        <button id="stop" class="offset-1 col-2 btn btn-danger">Stop</button>
+                    <div class="row justify-content-center">
+                        <button id="startA" class="col-2 btn btn-primary">Start</button>
+                        <button id="stopA" class="offset-1 col-2 btn btn-danger">Stop</button>
+                        <button id="applauseA" role="button" class="offset-1 col-2 btn btn-success">Applause</button>
+                        <button id="disableApplause" class="offset-1 col-2 btn btn-danger">Disable Feature</button>
                     </div>
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
@@ -77,7 +81,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="{{ url_for('static', filename='scripts/recorder.js') }}"
+<script src="{{ url_for('static', filename='scripts/recorderApplause.js') }}"
         type="application/javascript"></script>
 </body>
 </html>

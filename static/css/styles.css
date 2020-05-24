@@ -1,42 +1,51 @@
 body {
-  background: #1B0F32;
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #eeeeee;
+    background: #1B0F32;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #eeeeee;
 }
+
 header {
-  height: 35px;
-  width: 100%;
-  opacity: .9;
-  margin-bottom: 10px;
+    max-height: 35px;
+    width: 100%;
+    opacity: .9;
+    padding-top: 20px;
+    margin: 10px 0px;
 }
+
 .jumbotron {
-  background: #AC9DC5;
+    background: #AC9DC5;
 }
+
 header img {
     max-height: 100px;
     /*width: 100%;*/
 }
 
 section {
-  padding: 200px 20px;
+    padding: 220px 20px;
 }
 
 #stream {
-  padding-top: 20px;
+    padding-top: 20px;
+}
+
+.navbar-dark {
+    color: #AC9DC5;
+    background: #1B0F32;
 }
 
 #exTab1 .nav-tabs > li > a {
-  color: #AC9DC5;
-  background: #1B0F32;
-  border-bottom: 1px solid white;
-  /*border: 1px white;*/
-  /*border-radius: 4px 4px 0 0;*/
+    color: #AC9DC5;
+    background: #1B0F32;
+    border-bottom: 1px solid white;
+    /*border: 1px white;*/
+    /*border-radius: 4px 4px 0 0;*/
 }
 
 #exTab1 .tab-content {
-  color : white;
-  padding : 5px 15px;
+    color: white;
+    padding: 5px 15px;
 }
 
