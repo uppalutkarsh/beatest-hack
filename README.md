@@ -2,7 +2,7 @@
 
 # Beatest Hackathon
 
-> Hand Raise Detection using OpenCV, Applause, Virtual Screen Board, Image refining 
+> Query Resolving via Hand Raise Detection using OpenCV, Applause Functionality Integration, Virtual Screen Board, Image Refining with future scope to implement Video Denoising 
 
 <br>
 
@@ -11,12 +11,12 @@
 * [Assumptions](#-assumptions)
 * [Requirements](#-requirements)
 * [Running the Project](#-running-the-Project)
-* [Youtube Video](#-youtube-video)
+* [Links](#-links)
 * [Contributors](#-contributors)
 
 <br>
 
-### ✍&nbsp; About the Project:
+### ✍&nbsp; About the Project
 
 The main idea includes providing modules with special features for all the video calling apps for noise-free video calling and online meetings. The first feature is to unmute only that user whose request will be placed upon hand raising and approved by the admin so as to prevent disturbances. For this, we have built a UI on technology-based FLASK which will accept requests on hand raising and the user will be shown the message” YOU  CAN ASK DOUBT NOW”. Another is special applause when the teacher or the presenter ends the presentation and this will not give a sudden ending to the online meeting and motivate the presenter. Another feature is to remove noise disturbance from video calling.
 
@@ -43,7 +43,7 @@ The main idea includes providing modules with special features for all the video
 
 <br>
 
-### 🎬&nbsp; Youtube Video:
+### 🎬&nbsp; Youtube Videos :
 
  Tap here to watch the video [Team_PEC](https://youtu.be/zVCMufeIgNM)
 
