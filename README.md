@@ -18,7 +18,7 @@
 
 ### ✍&nbsp; About the Project
 
-The main idea includes providing modules with special features for all the video calling apps for noise-free video calling and online meetings. The first feature is to unmute only that user whose request will be placed upon hand raising and approved by the admin so as to prevent disturbances. For this, we have built a UI on technology-based FLASK which will accept requests on hand raising and the user will be shown the message” YOU  CAN ASK DOUBT NOW”. Another is special applause when the teacher or the presenter ends the presentation and this will not give a sudden ending to the online meeting and motivate the presenter. Another feature is to remove noise disturbance from video calling.
+Our idea is to render modules for all the video conferencing (VC) apps for noise-free video calling and online meetings. One peculiarity is the spontaneous unmuting of the mic when a user raises their hands for query-resolving or discussion induction. Another feature yields automatic applause at the end of any presentation or meeting. Furthermore, we integrate noise disturbance removal from the videos contributing to better clarity. The last and essential module that we introduce is the virtual screen board, supporting the real-time interactive notebook concourses.
 
 <br>
 
