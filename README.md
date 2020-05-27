@@ -5,18 +5,20 @@
 > Hand Raise Detection using OpenCV, Applause, Virtual Screen Board, Image refining 
 
 <br>
-## Table of Contents
-* [About the Project](#about-the-project)
-* [Assumptions](#assumptions)
-* [Requirements](#requirements)
-* [Working](#working)
-* [Running the Project](#running-the-Project)
-* [Links](#links)
-* [Contributors](#contributors)
+
+### 🚩&nbsp; Table of Contents
+* [About the Project](#-about-the-project)
+* [Assumptions](#-assumptions)
+* [Requirements](#-requirements)
+* [Running the Project](#-running-the-Project)
+* [Links](#-links)
+* [Contributors](#-contributors)
 
 <br>
 
 ### ✍&nbsp; About the Project
+
+The main idea includes providing modules with special features for all the video calling apps for noise-free video calling and online meetings. The first feature is to unmute only that user whose request will be placed upon hand raising and approved by the admin so as to prevent disturbances. For this, we have built a UI on technology-based FLASK which will accept requests on hand raising and the user will be shown the message” YOU  CAN ASK DOUBT NOW”. Another is special applause when the teacher or the presenter ends the presentation and this will not give a sudden ending to the online meeting and motivate the presenter. Another feature is to remove noise disturbance from video calling.
 
 <br>
 
@@ -31,27 +33,19 @@
 
 <br>
 
-### 🚀&nbsp; Working:
-* Uses palm cascade file to detect the landmarks of the fist
-* The code runs indefinitely and prints unmute when a hand raise is detected
-* Draws a rectange at the hand boundary to validate the detection
-* Press 'q' to end the video capturing session and exit the infinite loop
+### 🚀&nbsp; Running the Project:
 
-<br>
-
-### 📫&nbsp; Running the Project:
-* Open terminal in the project folder
+* Clone the repository by pasting the following line ```git clone https://github.com/uppalutkarsh/beatest-hack.git```
+* Open terminal in the project root folder
 * Run ```flask run```
 * This will run the project in debug mode
 * Open http://127.0.0.1:5000/ to view the Web page
 
 <br>
 
-### 📩&nbsp; Links:
+### 🎬&nbsp; Youtube Videos :
 
-#### Youtube Videos
-
-#### Doc File
+ Tap here to watch the video [Team_PEC](https://youtu.be/zVCMufeIgNM)
 
 <br>
 
