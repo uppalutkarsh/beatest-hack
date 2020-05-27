@@ -1,6 +1,6 @@
 <img src="readme_images/pec-logo.png" align="right" />
 
-# Beatest Hackathon
+# Beatest Hackathon - Team PEC
 
 > Query Resolving via Hand Raise Detection using OpenCV, Applause Functionality Integration, Virtual Screen Board, Image Refining with future scope to implement Video Denoising 
 
